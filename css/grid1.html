@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+             
+            "nav nav nav"
+            "slide main main"
+            "footer footer footer"
+            
+            
+            
+            ;
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+        }
+        .nav{
+            grid-area: nav;
+            height: 100px;
+            width: auto;
+            background-color: brown;
+        }
+        .slide{
+            grid-area: slide;
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+        .footer{
+            grid-area: footer;
+            width: auto;
+            height: 100px;
+            background-color: black;
+        }
+        .main{
+          grid-area: main;
+          width: 200px;
+          height: 100px;
+          background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav"></div>
+        <div class="slide"></div>
+        <div class="main"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

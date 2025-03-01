@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .parent{
+            background-color: rgb(202, 170, 131);
+            width: 600px;
+            height: 600px;
+            position: relative;
+            margin: auto;
+        }
+        .ball{
+            position: absolute;
+            border-radius: 50%;
+            background-color: black;
+            height: 10%;
+            width: 10%;
+
+            left: 45%;
+            top: 0%;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="start">Start Animation</button>
+
+    <div class="parent">
+        <div class="ball">
+
+        </div>
+    </div>
+
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(
+            function(){
+                $("#start").click(
+                    function(){
+                        $('.ball').animate({
+                            "position": "absolute",
+                            "left": "45%",
+                            "top": "0%",
+                        },1000);
+                        $('.ball').animate({
+                            "position": "absolute",
+                            "left": "90%",
+                            "top": "45%",
+                        },1000);
+                        $('.ball').animate({
+                            "position": "absolute",
+                            "left": "45%",
+                            "top": "90%",
+                        },1000);
+                        $('.ball').animate({
+                            "position": "absolute",
+                            "left": "0%",
+                            "top": "45%",
+                        },1000);
+                        $('.ball').animate({
+                            "position": "absolute",
+                            "left": "45%",
+                            "top": "0%",
+                        },1000);
+                    }
+                )
+            }
+        )
+    </script>
+</body>
+</html>
