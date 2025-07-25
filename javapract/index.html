@@ -6,7 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div id="app">
+
+    </div>
 </body>
-<script src="first.js"></script>
+<script>
+    const app = document.getElementById("app");
+
+    function renderRoute () {
+        const route = window.location.hash
+        if(route === "#about"){
+            app.innerHTML = "<h1>About Page</h1>"
+        }else{
+            app.innerHTML = "<h1>Home Page</h1>"
+        }
+    }
+
+    window.addEventListener("hashchange", renderRoute);
+    window.addEventListener("load", renderRoute)
+</script>
 </html>
