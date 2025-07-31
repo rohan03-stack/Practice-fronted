@@ -25,9 +25,9 @@ console.log("rohan");
 
 // let a;
 // console.log(a);
+// value= undefined
 
-// const a = 10;
-// console.log(a);
+
 
                                         //  block element example
 // {
