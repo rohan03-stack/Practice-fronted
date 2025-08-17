@@ -108,10 +108,10 @@
 //    ............terneray operators.............
 
 
-let age = 15;
+// let age = 15;
 
-let result = age > 18 ? "adult" : "not adilt";
-console.log(result);
+// let result = age > 18 ? "adult" : "not adilt";
+// console.log(result);
 
 
 
@@ -120,7 +120,18 @@ console.log(result);
 // ................practice.............
 
 
+// 1. get user to input a numner using promt "enter a number";check if the multiple of 5 or not
 
+
+ let num = prompt("enter a number:");
+
+if (num % 5 === 0){
+    console.log("numner is multiple of 5");
+    
+}else{
+    console.log("number is not multiple of 5");
+    
+}
 
 
 
